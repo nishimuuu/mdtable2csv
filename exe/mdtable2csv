@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require 'pathname'
+$:.unshift Pathname.new(__FILE__).dirname.join('..', 'lib/mdtable2csv').expand_path.to_s
+
+require 'mdtable2csv'
+MarkdownTableToCSV::CLI.start
